@@ -51,7 +51,7 @@ Traveltimes:
       Geobox: null    
 
   Priority: '1D'    # '1D'/'3D'. 
-  Phase: ['S'] # P, S or both
+  Phase: ['S', 'P'] # P, S or both
   Package: 'FMM'    # NNLOC/TAUP/FMM 
   Save: SSA2py/tttables
 
@@ -68,7 +68,7 @@ Download Service:
     # For full manual input formats this parameter is not used.
 
     Event Info:
-       Host: 'NOA'
+       Host: 'IRIS'
 
     # The Inventory section pertains to the characteristics of the stations, such as poles-zeros, digitizer's gain, etc. 
     # You can utilize different types of retrieval services, including FDSNWS-station ('FDSNWS'), XML ('StationXML'), and YAML ('StationYAML') formats. 
@@ -85,7 +85,7 @@ Download Service:
     # 'StationYAML' file example is provided for the Parkfield case.
 
     Inventory: 
-       - ['FDSNWS', 'NOA', null]
+       - ['FDSNWS', 'IRIS', null]
        
     # The Stream sub-section pertains to the waveforms data. 
     # It supports various types of retrieval services, including FDSNWS-dataselect, SeedLink, SDS archive path, and local MSEED. 
@@ -102,7 +102,7 @@ Download Service:
     # - ['MSEED', Path, null] (local MSEED file)
 
     Stream:
-       - ['FDSNWS', 'NOA', null]
+       - ['FDSNWS', 'IRIS', null]
 
 # Section dedicated to download rules.
 
